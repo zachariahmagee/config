@@ -204,6 +204,23 @@ alt-shift-semicolon = 'mode service'
 7 = ['secondary', 'dell']
 8 = ['secondary', 'dell']
 9 = ['secondary', 'dell']
+o = ['secondary', 'dell']
+p = ['secondary', 'dell']
+q = ['secondary', 'dell']
+y = ['secondary', 'dell']
+u = ['secondary', 'dell']
+
+[[on-window-detected]]
+#if.app-id = 'NULL-APP-BUNDLE-ID'
+if.app-name-regex-substring = 'build'
+#if.window-title-regex-substring = 'Practice'
+if.window-title-regex-substring = 'Crocodile'
+  run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'SASP'
+if.window-title-regex-substring = 'SASP'
+  run = 'layout floating'
 
 
 # 'service' binding mode declaration.
